@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # install the necessary dependencies
+sudo apt remove default-jdk default-jre
 sudo apt-get -q update
 sudo apt-get -yq install gnupg curl jq wget tree
 
