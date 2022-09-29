@@ -5,6 +5,7 @@ sudo apt-get -q update
 sudo apt-get -yq install gnupg curl jq wget tree
 
 # Azul Zulu OpenJDK setup
+export ZULU_REPO_VER=1.0.0-3
 apt-get -qq -y --no-install-recommends install gnupg software-properties-common locales curl tzdata && \
     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen && \
     locale-gen en_US.UTF-8 && \
