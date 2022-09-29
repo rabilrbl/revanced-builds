@@ -11,7 +11,6 @@ sudo apt-get -qq -y --no-install-recommends install gnupg software-properties-co
     curl -sLO https://cdn.azul.com/zulu/bin/zulu-repo_${ZULU_REPO_VER}_all.deb && sudo dpkg -i zulu-repo_${ZULU_REPO_VER}_all.deb && \
     sudo apt-get -qq update && \
     sudo mkdir -p /usr/share/man/man1 && \
-    sudo echo "Package: zulu17-*\nPin: version 17.0.4.1-*\nPin-Priority: 1001" > /etc/apt/preferences && \
     sudo apt-get -qq -y --no-install-recommends install zulu17-jdk=17.0.4.1-* && \
     sudo apt-get -qq -y purge gnupg software-properties-common curl && \
     sudo apt -y autoremove && \
